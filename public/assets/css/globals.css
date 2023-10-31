@@ -1,0 +1,11 @@
+* {
+    background-color: rgba(242, 239, 239, 0.9);
+    margin: 0;
+}
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+

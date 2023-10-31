@@ -1,0 +1,23 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+    justify-content: center;
+}
+
+.ab-left {
+    width: 500px;
+    height: 500px;
+
+}
+.ab-right {
+    width: 500px;
+    height: 500px;
+
+}
+
+.ab-right-text {
+    padding: 20px;
+    font-size: 16;
+}

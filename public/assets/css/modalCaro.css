@@ -1,0 +1,147 @@
+/*Modal Carousel*/
+
+.modalCaro {
+   /* border-radius: 15px;
+    width: 700px;
+    height: 700px;
+    background: violet;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;*/
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    transition: display 0.4 ease-in;
+}
+
+.modalCaro.active {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: display 0.4 ease-in;
+}
+
+/*@keyframes fadeModal {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}*/
+
+.boxi {
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: aqua;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+}
+
+.boxi:hover {
+    background-color: rgb(213, 15, 15);
+}
+
+.ModalChildren {
+    display: flex;
+    padding: 10px;
+    top: 60px;
+    color: black;
+    position: fixed;
+    gap: 30px;
+    border-radius: 10px;
+    
+}
+
+
+
+/*Modal contactUs*/
+
+.MoCo {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 220, 1);
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/*
+animation: fadeModalChild 0.5s ease;
+@keyframes fadeModalChild {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}*/
+
+.MoCoNa, .MoCoEm {
+    margin-bottom: 7px;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+}
+
+.MoCoTe {
+    margin-bottom: 13px;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+}
+
+.btn-bottom {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.btn-bottom-left, .btn-bottom-right {
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.btn-bottom-left:hover, .btn-bottom-right:hover {
+    background-color: rgb(222, 222, 222);
+}
+
+.map-input {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 7px;
+    margin-bottom: 7px;
+}
+
+input[type="radio"].map-input-input {
+    margin-right: 20px;
+}

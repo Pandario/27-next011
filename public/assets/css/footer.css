@@ -1,0 +1,43 @@
+.footer{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 1);
+    /*height: 40px;
+    gap: 20px;*/
+}
+
+.footer_logo {
+    display: flex;
+    padding: 30px;
+    margin-right: 60px;
+    background-color: rgba(250, 235, 215, 0.5);
+}
+
+
+.footer_content_a {
+    padding: 30px;
+    background-color: rgba(250, 235, 215, 0.5);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.footer_content_a:hover {
+    background-color: rgba(211, 203, 193, 0.5);
+}
+
+.childcon {
+    display: none;
+}
+
+.footer_content_a:link, .footer_content_a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.cookies {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+}

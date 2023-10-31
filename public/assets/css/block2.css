@@ -1,0 +1,58 @@
+
+.block2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    margin-bottom: 10px;
+
+}
+
+
+.text2 {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.btn-bl2 {
+    display: flex;
+    margin-right: 20px;
+    height: 30px;
+    width: 50px;
+    margin-top: 50%;
+    cursor: pointer;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.bl1tx2 {
+    text-align: center;
+    align-items: center;
+}
+
+
+/*.ModalChildren {
+    display: flex;
+    padding: 10px;
+    top: 60px;
+    color: black;
+    position: fixed;
+    gap: 30px;
+}*/
+
+
+
+.ModalRight {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    padding-top: 10px;
+}

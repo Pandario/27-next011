@@ -1,0 +1,49 @@
+.ModalLeft3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    height: 300px;
+    
+}
+
+.CaroImg3 {
+    display: flex;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.btnPre3 {
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 20px;
+    z-index: 1;
+    background-color: rgba(0, 0, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    right: 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btnPre3:hover {
+    background-color: rgba(0, 0, 255, 1);
+}
+.btnNex3 {
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 20px;
+    z-index: 1;
+    background-color: rgba(0, 0, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    left: 0px;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.btnNex3:hover {
+    background-color: rgba(0, 0, 255, 1);
+}
