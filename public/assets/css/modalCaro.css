@@ -89,19 +89,18 @@
     justify-items: center;
     padding: 20px;
     border-radius: 20px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    animation: fadeModalChild 0.5s ease;
 }
 
-/*
-animation: fadeModalChild 0.5s ease;
+
+
 @keyframes fadeModalChild {
     from {
         opacity: 0;
     } to {
         opacity: 1;
     }
-}*/
+}
 
 .MoCoNa, .MoCoEm {
     margin-bottom: 7px;
