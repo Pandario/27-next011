@@ -42,11 +42,6 @@ function ModalContactUsOpt({active, setActive, listOptions = [], opti1, opti2, o
       console.log(jsonData)
     }
 
-
-  //if(!open) return null;
-
-
-  
   return (
     <div className={active ? "modalCaro active" :"modalCaro" } onClick={e => e.stopPropagation()}>
           <button className="boxi" onClick={() => setActive(false)}>
@@ -105,42 +100,4 @@ function ModalContactUsOpt({active, setActive, listOptions = [], opti1, opti2, o
   );
 }
 
-/*
-
-<input
-                type='radio'
-                value='options'
-                checked = {listOptions === 'options'}
-                onChange={handleOptionsChange}
-                name='options'
-              /> Opti1
-
-              <input
-                type='radio'
-                value= 'option'
-                checked = {listOptions === 'option'}
-                onChange={(e) => setOption(e.target.value)}
-                name='option'
-              /> Opti 2
-
-
-              <div>
-              <ul className='MoCoEm'
-                  type='option'
-                  value={option}
-                  onChange={(e) => setOption(e.target.value)}
-              >
-                {listOptions.map((options) => (
-                  <li key={options}>{options}</li>
-                ))}
-              </ul>
-            </div>
-            
-{active, setActive, children}
-    <div className={active ? "modalCaro active" :"modalCaro" } onClick={() => setActive(false)}>
-    <div className={active ? "modal__content active" :"modal__content" } onClick={e => e.stopPropagation()}>
-    {children}
-    </div>
-</div>
- */
 export default ModalContactUsOpt;

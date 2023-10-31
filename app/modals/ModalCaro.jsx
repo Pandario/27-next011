@@ -16,12 +16,5 @@ const ModalCaro = ({active, setActive, children,}) => {
       </div>
   )
 }
-/*
-{active, setActive, children}
-    <div className={active ? "modalCaro active" :"modalCaro" } onClick={() => setActive(false)}>
-    <div className={active ? "modal__content active" :"modal__content" } onClick={e => e.stopPropagation()}>
-    {children}
-    </div>
-</div>
- */
+
 export default ModalCaro;
