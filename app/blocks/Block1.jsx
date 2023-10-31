@@ -7,7 +7,7 @@ import ModalCaro from "@/app/modals/ModalCaro";
 import ModalCaroLeft1 from "@/app/modals/ModalCaroLeft1";
 import ModalContactUsOpt from '@/app/modals/ModalContactUsOpt';
 
-import { Text1 } from './text/text1';
+import { Text1 } from './text/Text1';
 
 
 function Block1() {
