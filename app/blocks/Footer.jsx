@@ -5,6 +5,7 @@ import "@/public/assets/css/footer.css"
 import ModalCaro from '@/app/modals/ModalCaro';
 import Cookies from '@/app/modals/Cookies';
 import Block1 from './Block1';
+import Link from 'next/link';
 
 const Footer = () => {
     const [modalActive, setModalActive] = useState(false);
@@ -17,6 +18,7 @@ const Footer = () => {
       </div>
       <a className="footer_content_a" onClick={() => setModalActive2(true)}>terms of use</a>
       <a className="footer_content_a" onClick={() => setModalActive(true)}>Cookies</a>
+      <Link className="footer_content_a" href="/broken404">Broken</Link>
       <a className="footer_content_a" onClick={() => setModalChildActive(true)}>Contact us</a> 
       <ModalContactUs active={modalChildActive} setActive={setModalChildActive}/>
     

@@ -1,0 +1,76 @@
+* {
+    background-color: rgba(242, 239, 239, 0.9);
+    margin: 0;
+}
+.error404 {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+/* navbar 404 */
+.navig {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 1);
+    width: 100%;
+
+}
+
+.nav_a {
+    padding: 30px;
+    background-color: rgba(250, 235, 215, 0.5);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.nav_a:hover {
+    background-color: rgba(211, 203, 193, 0.5);
+}
+
+.navLogo {
+    display: flex;
+    padding: 30px;
+    margin-right: 60px;
+    background-color: rgba(250, 235, 215, 0.5);
+}
+
+.nav_a:link, .nav_a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* footer 404 */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 1);
+    /*height: 40px;
+    gap: 20px;*/
+}
+
+.footer_logo {
+    display: flex;
+    padding: 30px;
+    margin-right: 60px;
+    background-color: rgba(250, 235, 215, 0.5);
+}
+
+
+.footer_content_a {
+    padding: 30px;
+    background-color: rgba(250, 235, 215, 0.5);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.footer_content_a:hover {
+    background-color: rgba(211, 203, 193, 0.5);
+}
+
+.footer_content_a:link, .footer_content_a:visited {
+    text-decoration: none;
+    color: black;
+}
