@@ -6,9 +6,8 @@ import "@/public/assets/css/modalsLeft/left3.css";
 
 function ModalCaroLeft3() {
   const ImagePath = [
-    '/UI/carousel/bl3/fore1.jpg',
-    '/UI/carousel/bl3/fore2.jpg',
-    '/UI/carousel/bl3/fore3.jpg'
+    '/UI/carousel/bl3/rest1.jpg',
+    '/UI/carousel/bl3/rest2.jpg',
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,7 +22,7 @@ function ModalCaroLeft3() {
 
   return (
     <div className="ModalLeft3">
-          <div>{`Forest # ${currentIndex +1}`}</div>
+          <div>{`Restaurant # ${currentIndex +1}`}</div>
           <div className="CaroImg3">
               <Image 
               src={ImagePath[currentIndex]}

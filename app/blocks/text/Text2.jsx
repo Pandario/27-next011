@@ -4,7 +4,9 @@ import "@/public/assets/css/bl2txt.css"
 export const Text2 = () => {
   return (
     <div className='txtbl2'>
-
+        <p>
+          Like fishing? &apos;Try&apos; it with our boats!
+        </p>
         Lorem ipsum dolor sit amet 
         consectetur adipisicing elit. xcepturi 
         veniam quos ab temporibus unde necessitatibus 

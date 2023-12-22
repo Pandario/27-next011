@@ -3,17 +3,17 @@ import Image from 'next/image'
 
 import "@/public/assets/css/footer.css"
 
-function Cookies () {
+function Terms () {
     
   return (
     <div className='cookies'>
-      <div className="cookiesText">Our fake cookies!</div>  
+      <div className="cookiesText">No terms! Fake website!</div>  
       
       <Image 
-          src={'/assets/cookies/cookies.jpg'}
+          src={'/assets/terms/fake.jpg'}
           width={400}
           height={400}
-          alt={'cookies'}
+          alt={'terms'}
           priority={true}
           style={{borderRadius: "5px"}}
         />
@@ -23,4 +23,4 @@ function Cookies () {
   )
 }
 
-export default Cookies
+export default Terms;

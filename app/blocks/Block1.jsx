@@ -5,7 +5,7 @@ import "@/public/assets/css/block1.css"
 
 import ModalCaro from "@/app/modals/ModalCaro";
 import ModalCaroLeft1 from "@/app/modals/ModalCaroLeft1";
-import ModalContactUsOpt from '@/app/modals/ModalContactUsOpt';
+import ModalContactUsOpt from '@/app/modals/ModalContactUsOpt1';
 
 import { Text1 } from './text/Text1';
 
@@ -16,17 +16,6 @@ function Block1() {
 
     const [modalChildActive, setModalChildActive] = useState(false);
 
-    const [opti1, setOpti1] = useState('Val1');
-
-    const listOptions = [
-      {lable: 'Var 1', value: 'Val1'},
-      {lable: 'Var 2', value: 'Val2'},
-      {lable: 'Var 3', value: 'Val3'},
-    ]
-
-    const handleOptionsChange = (newValue) => {
-      setOpti1(newValue);
-    };
   return (
     <div>
       <div className="block1">
@@ -39,7 +28,7 @@ function Block1() {
             <button 
               className='btn-bl1' 
               onClick={() => setModalActive(true)}>
-              Try
+              Rent
             </button>
           </div>
         </div>
@@ -50,6 +39,7 @@ function Block1() {
           height={400}
           alt={'camping'}
           priority={true}
+          style={{borderRadius: "5px"}}
         />
 
       </div>
@@ -67,9 +57,7 @@ function Block1() {
             {modalActive && <ModalContactUsOpt 
               active={modalChildActive}
               setActive={setModalChildActive}
-              listOptions={listOptions}
-              opti1={opti1}
-              handleOptionsChange = {handleOptionsChange}
+              
               />}
         </div>
       </ModalCaro>

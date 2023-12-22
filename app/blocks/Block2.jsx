@@ -5,7 +5,7 @@ import "@/public/assets/css/block2.css"
 
 import ModalCaro from "@/app/modals/ModalCaro";
 import ModalCaroLeft2 from "@/app/modals/ModalCaroLeft2";
-import ModalContactUsOpt from '@/app/modals/ModalContactUsOpt';
+import ModalContactUsOpt from '@/app/modals/ModalContactUsOpt2';
 
 import { Text2 } from './text/Text2';
 
@@ -16,18 +16,7 @@ function Block2() {
 
   const [modalChildActive, setModalChildActive] = useState(false);
 
-  const [opti2, setOpti2] = useState('Zr3');
-
-  const listOptions = [
-    {lable: 'Zz 1', value: 'Zr1'},
-    {lable: 'Zz 2', value: 'Zr2'},
-    {lable: 'Zz 3', value: 'Zr3'},
-    {lable: 'Zz 4', value: 'Zr4'},
-  ]
-
-  const handleOptionsChange = (newValue) => {
-    setOpti2(newValue);
-  };
+  
   return (
     <div>
       <div className="block2">
@@ -36,6 +25,7 @@ function Block2() {
           width={400}
           height={400}
           alt={'fishing'}
+          style={{borderRadius: "5px"}}
         />
 
         <div className="text2">
@@ -65,9 +55,6 @@ function Block2() {
             {modalActive && <ModalContactUsOpt 
               active={modalChildActive}
               setActive={setModalChildActive}
-              listOptions={listOptions}
-              opti2={opti2}
-              handleOptionsChange = {handleOptionsChange}
               />}
         </div>
       </ModalCaro>

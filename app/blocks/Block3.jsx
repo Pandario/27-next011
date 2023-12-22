@@ -5,7 +5,7 @@ import "@/public/assets/css/block3.css"
 
 import ModalCaro from "@/app/modals/ModalCaro";
 import ModalCaroLeft3 from "@/app/modals/ModalCaroLeft3";
-import ModalContactUsOpt from '@/app/modals/ModalContactUsOpt';
+import ModalContactUsOpt from '@/app/modals/ModalContactUsOpt3';
 
 import { Text3 } from './text/Text3';
 
@@ -16,17 +16,6 @@ function Block3() {
 
   const [modalChildActive, setModalChildActive] = useState(false);
 
-  const [opti3, setOpti3] = useState('Vu2');
-
-  const listOptions = [
-    {lable: 'Vbm 1', value: 'Vu1'},
-    {lable: 'Vbm 2', value: 'Vu2'},
-    {lable: 'Vbm 3', value: 'Vu3'},
-  ]
-
-  const handleOptionsChange = (newValue) => {
-    setOpti3(newValue);
-  };
 
   return (
     <div>
@@ -40,16 +29,17 @@ function Block3() {
             <button
               className='btn-bl3' 
               onClick={() => setModalActive(true)}>
-              Try
+              Reserve
             </button>
 
           </div>
         </div>
         <Image 
-          src={'/assets/photoMain/011forest.jpg'}
+          src={'/assets/photoMain/011restaurant.jpg'}
           width={400}
           height={400}
-          alt={'fishing'}
+          alt={'restaurant'}
+          style={{borderRadius: "5px"}}
         />
       </div>
 
@@ -66,9 +56,6 @@ function Block3() {
           {modalActive && <ModalContactUsOpt 
             active={modalChildActive}
             setActive={setModalChildActive}
-            listOptions={listOptions}
-            opti3={opti3}
-            handleOptionsChange = {handleOptionsChange}
           />}
         </div>
       </ModalCaro>

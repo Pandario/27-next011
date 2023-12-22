@@ -1,58 +1,50 @@
 'use client'
-import React, { useState } from 'react'
-import axios from 'axios';
-
-
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 import "@/public/assets/css/modalCaro.css"
 
 
 const ModalContactUs = ({active, setActive}) => {
 
-    /*const request = require('request');*/
-
+    const router = useRouter();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [text, setText] = useState('');
+    const [errorMessage, setErrorMessage] = useState("");
     
-     const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {
       
-      e.preventDefault();
-      
-      setName('')
-      setEmail('')
-      setText('')
-      
-      
-        const dataPay = {
-          members: [
-            {
-              email_address: email,
-              status: 'subscribed',
-              merge_fields: {
-                FNAME: name,
-                LNAME: text,
-              }
-      
-            }
-          ]
-        };
-        try {
-          const { data }= await axios ({
-            url:'',
-            method: 'POST',
-            data: dataPay
+        e.preventDefault();
+        setErrorMessage("")
+        setName('');
+        setEmail('');
+        setText('');
+          const dataPay = {
 
-        });
-        console.log(data)
+                email: email,
+                name: name,
+                text: text,
         
-      }catch (error) {
-        alert(error.message);
-      }
 
-        let jsonData = JSON.stringify(dataPay);
-        console.log(jsonData)
-  }
+          };
+          
+          const res = await fetch("/api/Users",{
+            method: "POST",
+            body: JSON.stringify({ dataPay }),
+            "content-type" : "application/json"
+          });
+
+          if(!res.ok) {
+
+            const response = await res.json();
+            setErrorMessage(response.message);
+          }else{
+            router.refresh();
+            router.push("/");
+          }
+
+      }
 
   
   return (
@@ -60,7 +52,7 @@ const ModalContactUs = ({active, setActive}) => {
           <button className="boxi" onClick={() => setActive(false)}>
             X
           </button>
-          <form className='MoCo' onSubmit={handleSubmit}>
+          <form className='MoCo' onSubmit={handleSubmit} method='post'>
             <input
                 className='MoCoNa'
                 name='name'
@@ -91,6 +83,7 @@ const ModalContactUs = ({active, setActive}) => {
               <button className='btn-bottom-right' onClick={() => setActive(false) && state(false)}>Submit</button>
             </div>
           </form>
+          <p className="text-red-500">{errorMessage}</p>
     </div>
   )
 }

@@ -36,8 +36,11 @@
     color: black;
 }
 
-.cookies {
-    width: 400px;
-    height: 400px;
-    background-color: brown;
+/*.cookies {
+    width: 450px;
+    height: 450px;
+}*/
+
+.cookiesText {
+    margin-bottom: 5px;
 }

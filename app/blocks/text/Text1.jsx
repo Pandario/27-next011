@@ -4,7 +4,10 @@ import "@/public/assets/css/bl1txt.css"
 export const Text1 = () => {
   return (
     <div className='txtbl1'>
-
+        <p>
+          Amazing camp houses in our resort area!
+          Click &apos;Rent&apos; and try yourself !
+        </p>
         Lorem ipsum dolor sit amet 
         consectetur adipisicing elit. xcepturi 
         veniam quos ab temporibus unde necessitatibus 

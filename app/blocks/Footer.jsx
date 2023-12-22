@@ -6,6 +6,7 @@ import ModalCaro from '@/app/modals/ModalCaro';
 import Cookies from '@/app/modals/Cookies';
 import Block1 from './Block1';
 import Link from 'next/link';
+import Terms from '../modals/Terms';
 
 const Footer = () => {
     const [modalActive, setModalActive] = useState(false);
@@ -24,7 +25,7 @@ const Footer = () => {
     
     
       <ModalCaro active={modalActive2} setActive={setModalActive2}>
-        <Block1/>
+        <Terms/>
       </ModalCaro>
       <ModalCaro active={modalActive} setActive={setModalActive}>
         <Cookies/>

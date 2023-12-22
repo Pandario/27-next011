@@ -1,3 +1,9 @@
 .txtbl1 {
     text-align: left;
 }
+
+p {
+    margin-bottom: 5px;
+    font-size: large;
+    font-weight: bold;
+}
