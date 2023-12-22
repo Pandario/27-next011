@@ -36,7 +36,7 @@ function ModalContactUsOpt({active, setActive}) {
         text: text,
 
       };
-      const res = await fetch(`https://27-next011-itr5t6eu7-pandario.vercel.app/api/UsersOpt`,{
+      const res = await fetch("https://27-next011.vercel.app/api/UsersOpt",{
         method: "POST",
         body: JSON.stringify({ dataPayOpt }),
         "content-type" : "application/json"
