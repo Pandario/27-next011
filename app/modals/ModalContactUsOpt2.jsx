@@ -36,7 +36,7 @@ function ModalContactUsOpt({active, setActive}) {
         text: text,
 
       };
-      const res = await fetch(process.env.FETCH_URL,{
+      const res = await fetch(`${process.env.FETCH_URL}`,{
         method: "POST",
         body: JSON.stringify({ dataPayOpt }),
         "content-type" : "application/json"
