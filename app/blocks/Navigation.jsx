@@ -8,7 +8,8 @@ import Link from 'next/link';
 function Navigation() {
   const [modalChildActive, setModalChildActive] = useState(false);
   return (
-    <nav className="navig">
+    <nav>
+      <div className="navig">
         <div className="navLogo">
           logo
         </div>
@@ -17,6 +18,19 @@ function Navigation() {
         <Link href="/pages/about" className='nav_a'>About us</Link>
         <a className='nav_a' onClick={() => setModalChildActive(true)}>Contact</a>
         <ModalContactUs active={modalChildActive} setActive={setModalChildActive} />
+        </div>
+
+        
+        <div className="navig2">
+        <div className="navLogo">
+          logo
+        </div>
+        <Link href="/" className='nav_a'>Main</Link>
+        <Link href="https://www.cvfishing.nl" target='blank' className='nav_a'>Fishing equipment</Link>
+        <Link href="/pages/about" className='nav_a'>About us</Link>
+        <a className='nav_a' onClick={() => setModalChildActive(true)}>Contact</a>
+        <ModalContactUs active={modalChildActive} setActive={setModalChildActive} />
+        </div>
     </nav>
   )
 }

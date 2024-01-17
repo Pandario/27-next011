@@ -9,7 +9,16 @@
     margin-bottom: 10px;
 
 }
+@media (max-width: 1024px) {
+    .block2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
 
+    }
+
+}
 
 .text2 {
     display: flex;
@@ -36,7 +45,11 @@
     text-align: center;
     align-items: center;
 }
-
+@media (max-width: 1024px) {
+    .text2{
+        flex-direction: row-reverse;
+    }
+}
 
 /*.ModalChildren {
     display: flex;

@@ -1,0 +1,20 @@
+.your-class-name {
+    position: fixed;
+    bottom: 2rem; /* bottom-8 */
+    right: 2rem; /* right-8 */
+    color: #4a5568; /* text-blue-700, this is an approximate color */
+    font-weight: bold; /* font-bold */
+    padding: 0.25rem; /* p-1 */
+    border-radius: 9999px; /* rounded-full */
+    transition: opacity 0.2s; /* Smooth transition for opacity changes */
+    opacity: 0.45; /* Default opacity */
+    background-color: none;
+}
+
+.your-class-name:hover {
+    opacity: 1; /* hover:opacity-100 */
+}
+
+.your-class-name.at-bottom {
+    opacity: 1; /* opacity-100 when atBottom is true */
+}

@@ -9,6 +9,16 @@
     margin-bottom: 10px;
 
 }
+@media (max-width: 1024px) {
+    .block3 {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+    }
+    
+}
 
 .block-textarea3 {
     display: flex;

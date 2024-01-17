@@ -7,6 +7,7 @@ import Footer from "@/app/blocks/Footer"
 import Navigation from "@/app/blocks/Navigation"
 
 import "@/public/assets/css/globals.css"
+import { Top } from "./blocks/Top"
 
 
 /*import { useState } from "react";
@@ -31,6 +32,7 @@ export default function Home() {
         <Block3/>
       </div>
       <Footer/>
+      <Top/>
     </main>
     
   )

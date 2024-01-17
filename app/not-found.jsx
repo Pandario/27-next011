@@ -1,7 +1,7 @@
-import Link from "next/link";
 import NavigationBro from "./blocks/broken404/NavigationBro";
 import FooterBro from "./blocks/broken404/FooterBro";
 import Image from "next/image";
+import "@/public/assets/css/page404/page404.css"
 
 export default function NotFound() {
   return (

@@ -30,3 +30,25 @@
     text-decoration: none;
     color: black;
 }
+.navig2 {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .navig {
+        display: none;
+    }
+    .navig2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .navLogo {
+        padding: 5px;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav_a {
+        padding: 5px;
+        justify-content: center;
+        margin: 0;
+    }
+}

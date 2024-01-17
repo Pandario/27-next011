@@ -10,11 +10,22 @@
     margin-bottom: 10px;
 
 }
+@media (max-width: 1024px) {
+    .block1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+    }
+    
+}
 
 .block-textarea1 {
     display: flex;
     flex-direction: column;
 }
+
 
 .text1 {
     display: flex;

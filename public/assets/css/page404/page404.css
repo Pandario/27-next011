@@ -74,3 +74,38 @@
     text-decoration: none;
     color: black;
 }
+
+
+@media (max-width: 1024px) {
+    .navig {
+        flex-direction: column;
+    }
+    .navLogo {
+        padding: 5px;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav_a {
+        padding: 5px;
+        justify-content: center;
+        margin: 0;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer_logo {
+        padding: 5px;
+        justify-content: center;
+        margin: 0;
+    }
+    .footer_content_a {
+        padding: 5px;
+        justify-content: center;
+        margin: 0;
+    }
+    .error404 {
+        width: 100%;
+        height: auto;
+    }
+}
+
